@@ -1,0 +1,15 @@
+{
+  "name": "miki-dragsort",
+  "version": "0.0.2",
+  "description": "a drag plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drag",
+    "sort"
+  ],
+  "author": "mikixing",
+  "license": "ISC"
+}
