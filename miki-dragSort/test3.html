@@ -55,8 +55,7 @@
 	<script src="./index.js"></script>
 	<script>
 		var box = document.getElementById('list')
-		drag.init(box, function () {console.log('haha')})   //不传type默认局部交换
-		// drag.init(box, function () {console.log('haha')}, 'mutual')  //mutual两两交换
+		drag.init(function () {console.log('haha')}, box)
 	</script>
 </body>
 </html>

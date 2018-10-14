@@ -1,3 +1,8 @@
+/**
+ * author:mikixing
+ * update:2018.10.14
+ * address:https://github.com/mikixing/miki-components/miki-dragSort
+ */
 //辅助函数
 function bind (ele, type, fn) {
 	ele.addEventListener(type, fn, false)
@@ -60,12 +65,26 @@ DragSort.prototype.resort = function (arr) {
 		box.appendChild(child)
 	})
 }
-DragSort.prototype.init = function (ele, fn, type) {
+DragSort.prototype.init = function () {
+	var type
+	var fn
 	var z = 10
 	var hold
 	var that = this
 	var items = []
-	this.ele = ele
+	//支持无序传参
+	for (var i = 0; i < arguments.length; i++) {
+		if (typeof arguments[i] === 'object') {
+			this.ele = arguments[i]
+			console.log(this.ele, 'ele')
+		} else if (typeof arguments[i] === 'function') {
+			fn = arguments[i]
+			console.log(fn, 'fn')
+		} else {
+			type = arguments[i]
+			console.log(type, 'type')
+		}
+	}
 	if (!this.ele) {
 		throw new Error('挂载元素必传!')
 	}
