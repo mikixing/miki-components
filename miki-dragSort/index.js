@@ -1,7 +1,7 @@
 /**
  * author:mikixing
  * update:2018.10.14
- * address:https://github.com/mikixing/miki-components/miki-dragSort
+ * address:https://github.com/mikixing/miki-components
  */
 //辅助函数
 function bind (ele, type, fn) {
