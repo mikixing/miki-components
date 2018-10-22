@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>dp</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="miki-dp">
+            <div class="miki-dp-child miki-dp-more">
+                <div>一级菜单</div>
+                <div class="miki-dp-child miki-dp-more">
+                    <div>二级菜单</div>
+                    <div class="miki-dp-child">
+                        <div>三级菜单</div>
+                    </div>
+                    <div class="miki-dp-child">
+                        <div>三级菜单</div>
+                    </div>
+                </div>
+                <div class="miki-dp-child">
+                    <div>二级菜单</div>
+                </div>
+                <div class="miki-dp-child">
+                    <div>二级菜单</div>
+                </div>
+            </div>
+            <div class="miki-dp-child miki-dp-more">
+                <div>一级菜单</div>
+                <div class="miki-dp-child miki-dp-more">
+                    <div>二级菜单</div>
+                    <div class="miki-dp-child">
+                        <div>三级菜单</div>
+                    </div>
+                    <div class="miki-dp-child">
+                        <div>三级菜单</div>
+                    </div>
+                </div>
+            </div>
+            <div class="miki-dp-child">
+                <div>一级菜单</div>
+            </div>
+            <div class="miki-dp-child">
+                <div>一级菜单</div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $('#box').mikiDp()
+    </script>
+</body>
+</html>
