@@ -7,8 +7,8 @@ $ npm i miki-dragSort
 或者直接引入
 
 ```javascript
-<script src="https://github.com/mikixing/miki-components/miki-dragSort/index.js"></script>
-<link href="https://github.com/mikixing/miki-components/miki-dragSort/style.css"/>
+<script src="https://mikixing.github.io/miki-components/miki-dragSort/index.js"></script>
+<link href="https://mikixing.github.io/miki-components/miki-dragSort/style.css"/>
 ```
 
 ### 特性
