@@ -1,0 +1,70 @@
+.miki-matte {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    opacity: .5;
+}
+.miki-datetime {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+    background: #fff;
+    bottom: 0;
+    color: #707274;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -ms-tap-highlight-color:rgba(0, 0, 0, 0);
+    -o-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.miki-datetime-button {
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #eaeaea;
+    color: #26a2ff;
+}
+.miki-datetime-btn {
+    width: 50%;
+}
+.miki-datetime-btn[cancel] {
+    float: left;
+}
+.miki-datetime-btn[confirm] {
+    float: right;
+}
+.miki-datetime-content {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+.miki-datetime-list {
+    top: 72px;
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: 16px;
+    position: relative;
+    z-index: 10;
+}
+.miki-datetime-item {
+    height: 36px;
+    line-height: 36px;
+}
+.miki-datetime-center {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 100%;
+    height: 34px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+.miki-datetime-active {
+    color: #000;
+}

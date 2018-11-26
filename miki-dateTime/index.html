@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>移动端日历</title>
+    <style>
+        #box {
+            margin: 50px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="box" readonly>
+    <script src="./ajax.js"></script>
+    <script src="./move.js"></script>
+    <script src="index.js"></script>
+    <script>
+        var box = document.getElementById('box')
+        var opt = {}
+        opt.ele = box
+        // opt.cb = function (r, j) {
+        //     ajax({url: 'http://localhost:9898/hhh', success: function (res) {
+        //         if (+res.code === 1) {
+        //             r(1)
+        //         } else {
+        //             j(res)
+        //         }
+        //     }, error: function () {
+        //         j('Internet Error')
+        //     }})
+        // }
+        box.onclick = function () {
+            var dateTime = new DateTime()
+            dateTime.init(opt)
+        }
+    </script>
+</body>
+</html>
