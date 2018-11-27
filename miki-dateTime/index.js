@@ -45,16 +45,20 @@ function moveTo (ele, start, end) {
 }
 
 //DateTime
-function DateTime () {}
+function DateTime () {
+    alert(123)
+}
 DateTime.prototype.init = function (opt) {
+    alert(123)
     this.ele = opt.ele
     this.cb = opt.cb || ''
-    if (this.ele.nodeName !== 'INPUT') throw new Error('元素类型错误')
+    // if (this.ele.nodeName !== 'INPUT') throw new Error('元素类型错误')
     this.create(opt)
     this.bindEvent()
 }
 
 DateTime.prototype.create = function () {
+
     var matte = document.createElement('div')
     matte.className = 'miki-matte'
     var container = document.createElement('div')
