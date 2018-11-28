@@ -52,7 +52,6 @@ DateTime.prototype.init = function (opt) {
     if (this.ele.nodeName !== 'INPUT') throw new Error('元素类型错误')
     this.create(opt)
     this.bindEvent()
-    alert('98kk1')
 }
 
 DateTime.prototype.create = function () {
