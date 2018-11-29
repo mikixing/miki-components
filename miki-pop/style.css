@@ -1,0 +1,80 @@
+.fit::after {
+	content: '';
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.miki-matte {
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, .6);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.miki-pop {
+	width: 400px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #333;
+	z-index: 1000;
+	min-height: 160px;
+}
+@media screen and (max-width: 450px) {
+    .miki-pop {
+		width: 70%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0 0 20px #333;
+		z-index: 1000;
+		min-height: 160px;
+	}
+}
+.miki-title {
+	font-size: 16px;
+	text-align: center;
+	line-height: 49px;
+	color: #555;
+	border-bottom: 1px solid #e5e5e5;
+}
+.miki-text {
+	min-height: 59px;
+	font-size: 14px;
+	padding: 5px 20px;
+	color: #555;
+	border-bottom: 1px solid #e5e5e5;
+}
+.miki-btn {
+	margin: auto;
+	text-align: center;
+	font-size: 14px;
+}
+.miki-confirm {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	background: #5cb85c;
+	border-radius: 5px;
+	color: #fff;
+	float: right;
+	margin: 10px;
+}
+.miki-cancel {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	background: #d9534f;
+	border-radius: 5px;
+	color: #fff;
+	float: right;
+	margin: 10px;
+}
