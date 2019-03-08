@@ -1,0 +1,100 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.fit::after {
+	content: '';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.matte {
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+}
+.calendar {
+	width: 210px;
+	border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 0 8px #999;
+    padding: 5px;
+    position: absolute;
+    z-index: 999;
+    animation: fade-in-down .3s;
+}
+.calendar-title {
+	padding: 0 15px;
+}
+.arrow {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #eee;
+	text-align: center;
+	line-height: 20px;
+	font-size: 13px;
+	color: #666;
+	cursor: pointer;
+}
+.text {
+	font-size: 13px;
+}
+.calendar-top {
+	float: left;
+	width: 20px;
+	text-align: center;
+}
+.num-year {
+	width: 40px;
+}
+.weekday {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	color: #aaa;
+	font-size: 13px;
+}
+.rest {
+	color: #f70;
+}
+.calendar-item {
+	width: 30px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	border-radius: 100%;
+}
+.today {
+	cursor: pointer;
+}
+.preday {
+	color: #aaa;
+}
+.nextday {
+	color: #aaa;
+}
+.active {
+	background-color: #f70;
+	color: #fff;
+}
+.hover-in {
+	background-color: #eee;
+}
+.disable {
+	cursor: not-allowed;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calendar</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body style="padding-left: 200px;padding-top: 200px;" >
+	<input id="mount" placeholder="点我弹出日历😁"/>
+	<script src='index.js'></script>
+	<script>
+		var mount = document.getElementById('mount')
+		mount.onfocus= function () {
+			new Calendar(this)
+		}
+	</script>
+</body>
+</html>
