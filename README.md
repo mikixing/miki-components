@@ -2,7 +2,7 @@
 
 ##### 1.说明
 
-工作之余个人爱好写了一些小组件,其中有的已经发布到npm,具体详见子目录的readme
+工作之余个人爱好写了一些小组件,其中有的已经发布到npm,具体详见子目录的readme.demo演示请查看https://mikixing.github.io/miki-components/index.html
 
 ##### 2.内容
 
