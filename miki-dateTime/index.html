@@ -8,20 +8,34 @@
     <link rel="stylesheet" href="./reset.css">
     <title>移动端日历</title>
     <style>
-        #box {
+        /* #box {
             margin: 50px;
             border: 1px solid #555;
             border-radius: 5px;
             padding: 5px 10px;
             cursor: pointer;
-            /* background: red; */
+            background: red;
             height: 50px;
+        } */
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <h4>移动端日历</h4>
-    <input type="text" id="box" readonly>
+    <div class="wrap">
+        <p>移动端日历</p>
+        <input type="text" id="box" readonly placeholder="点我查看效果😁">
+        <div style="margin: 20px;">
+            <a href="https://mikixing.github.io/miki-components/index.html">点我回到首页</a>
+        </div>
+    </div>
     <!-- <div id="box"></div> -->
     <script src="./ajax.js"></script>
     <script src="./move.js"></script>
